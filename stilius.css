@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/609701bc21f2ee5734517421/1647916353200-3AFM906VSLDLP5OPURFY/army+green+seamless+camo+Cover+WM+2.jpg?format=1500w');
+    background-size: cover; /* Paveikslėlis užims visą plotą */
+    background-repeat: no-repeat; /* Paveikslėlis nesikartos */
+    color: #333; 
+}
+
+header {
+    background-color: rgba(0, 51, 0, 0.8); /* Tamsiai žalia su permatomumu */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+nav ul li a:hover {
+    color: #ffcc00; 
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+section {
+    margin: 20px 0;
+}
+
+.ginklai-kortelės {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.ginklo-kortelė {
+    background-color: rgba(255, 255, 255, 0.9); /* Balta su permatomumu */
+    border: 2px solid #004d00; 
+    border-radius: 10px; 
+    padding: 20px;
+    text-align: center;
+    width: 280px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s; 
+}
+
+.ginklo-kortelė:hover {
+    transform: translateY(-5px); 
+}
+
+.ginklo-kortelė img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 51, 0, 0.8); 
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: inline-block;
+    text-align: left; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+form label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+form input {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+form button {
+    background-color: #004d00; 
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+form button:hover {
+    background-color: #003300; 
+}
+
+.pajegos-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+section {
+    margin: 40px 0; 
+    padding: 20px; 
+    border: 2px solid #4a4a4a; 
+    border-radius: 8px; 
+    background-color: rgba(249, 249, 249, 0.9); 
+}
+
+section + section {
+    border-top: 2px solid #4a4a4a; 
+    padding-top: 20px; 
+}
+
+.pajegos-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    line-height: 1.6; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; 
+}
+
+main {
+    width: 90%;
+    max-width: 1200px; 
+    margin: auto;
+}
+
+section {
+    margin: 40px 0; 
+    padding: 20px; 
+    border: 2px solid #4a4a4a; 
+    border-radius: 8px; 
+    background-color: #fff; 
+}
+
+.ginklu-korteles {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.ginklas {
+    margin: 10px; 
+    padding: 15px; 
+    background-color: #e0e0e0; 
+    border-radius: 8px; 
+    flex: 1 1 200px; 
+}
+
+.dark-theme {
+    background-color: #333; 
+    color: #fff; 
+}
+
+@media (max-width: 1200px) {
+    body {
+        font-size: 16px; 
+    }
+
+    section {
+        margin: 30px 0; 
+        padding: 15px; 
+    }
+
+    .ginklas {
+        flex: 1 1 250px; 
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 14px; 
+    }
+
+    section {
+        margin: 25px 0; 
+        padding: 10px; 
+    }
+
+    .ginklas {
+        flex: 1 1 100%; 
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 13px; 
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; 
+    }
+
+    section {
+        margin: 20px 0; 
+        padding: 8px; 
+    }
+
+    .ginklas {
+        padding: 10px; 
+    }
+}
