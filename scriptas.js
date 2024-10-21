@@ -1,8 +1,4 @@
-document.getElementById("registracijos-forma").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Ačiū, jūsų registracija sėkminga!");
-    window.location.href = "https://karo-prievoles-puslapis.lt";
-});
+
 const ginkloKorteles = document.querySelectorAll('.ginklo-kortelė');
 ginkloKorteles.forEach(kortelė => {
     kortelė.addEventListener('mouseover', () => {
